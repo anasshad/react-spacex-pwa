@@ -1,0 +1,83 @@
+/* .LaunchProfile__image {
+  height: 100px;
+} */
+
+.LaunchProfile {
+  padding: 1em;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.LaunchProfile__success {
+  color: green;
+}
+
+.LaunchProfile__failure {
+  color: red;
+}
+
+.imageSlider_container {
+  display: flex;
+  width: 90vw;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  max-height: 50vh;
+}
+
+.imageSlider_current {
+  border: 2px solid red;
+}
+
+.imageSlider_main {
+  display: flex;
+  justify-content: center;
+  background-color: #484848;
+  height: 35vh;
+}
+
+.imageSlider_main img {
+  height: 100%;
+}
+
+.imageSlider_miniimages {
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  /* height: 5rem; */
+}
+
+.imageSlider_miniimages img {
+  /* height: 100%; */
+  /* height: 50px; */
+  width: 5em;
+  object-fit: cover;
+}
+
+.imageSlider_buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.imageSlider_buttons button {
+  transition: all 1s ease-in;
+  background: rgba(0, 0, 255, 0.5);
+  border: none;
+  color: white;
+  box-shadow: 1px 2px 1px #484848;
+}
+
+.imageSlider_buttons button:hover {
+  background: rgba(0, 0, 255, 0.6);
+  color: #484848;
+}
+
+@media only screen and (min-width: 760px) {
+  .imageSlider_container {
+    width: 50vw;
+  }
+}
