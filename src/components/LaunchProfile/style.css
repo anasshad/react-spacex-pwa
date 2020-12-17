@@ -4,6 +4,10 @@
 
 .LaunchProfile {
   padding: 1em;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 90%;
+  margin: auto;
 }
 
 img {

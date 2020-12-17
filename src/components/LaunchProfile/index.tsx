@@ -2,6 +2,7 @@ import * as React from "react";
 import { RouteComponentProps } from "@reach/router";
 import { useLaunchProfileQuery } from "../../generated/graphql";
 import LaunchProfile from "./LaunchProfile";
+import Spinner from "../Spinner";
 import "./style.css";
 
 interface Props extends RouteComponentProps {
@@ -15,7 +16,7 @@ const LaunchProfileContainer = (props: Props) => {
   });
 
   if (loading) {
-    return <div>Loading</div>;
+    return <Spinner />;
   }
 
   if (error) {

@@ -27,7 +27,7 @@ const StyledContainer = styled(Container)<StyledContainerProps>`
   color: white;
 
   :hover {
-    opacity: 0.8;
+    opacity: 0.5;
   }
 `;
 
@@ -41,7 +41,9 @@ const LaunchList: React.FC<LaunchListProp> = ({ data }) => {
   console.log(data);
   return (
     <div className="LaunchList">
-      <h3>Launches</h3>
+      <div style={{ display: "block", width: "100%", textAlign: "center" }}>
+        <h3>Launches</h3>
+      </div>
       <ol className={`${className}__list`}>
         {!!data.launchesPast &&
           data.launchesPast.map(

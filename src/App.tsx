@@ -15,10 +15,13 @@ let LaunchProfileRoute = (props: RouteComponentProps) => (
 
 function App() {
   return (
-    <Router>
-      <LaunchListRoute path="/" />
-      <LaunchProfileRoute path="launch/:id" />
-    </Router>
+    <>
+      <h1>Space X Shuttle Launches</h1>
+      <Router>
+        <LaunchListRoute path="/" />
+        <LaunchProfileRoute path="launch/:id" />
+      </Router>
+    </>
   );
 }
 

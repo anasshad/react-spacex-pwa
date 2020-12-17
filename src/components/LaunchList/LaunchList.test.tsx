@@ -70,10 +70,4 @@ describe("LaunchList", () => {
       "Launches"
     );
   });
-
-  it("should display mission name as h4", () => {
-    expect(component.getByText(mockData.launchesPast[0].mission_name)).toBe(
-      true
-    );
-  });
 });
