@@ -38,7 +38,6 @@ interface LaunchListProp {
 const className = "LaunchList";
 
 const LaunchList: React.FC<LaunchListProp> = ({ data }) => {
-  console.log(data);
   return (
     <div className="LaunchList">
       <div style={{ display: "block", width: "100%", textAlign: "center" }}>

@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Router, RouteComponentProps, Link } from "@reach/router";
+import { Router, RouteComponentProps } from "@reach/router";
 
 //import styling
 import "./App.css";

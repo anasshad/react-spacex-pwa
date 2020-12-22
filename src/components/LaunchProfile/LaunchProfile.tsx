@@ -32,6 +32,7 @@ const ImageSlider = ({ children }: ImageSliderProps) => {
         <div className="imageSlider_miniimages">
           {childrenArray.map((child, i) => (
             <div
+              key={i}
               className={current === i ? "imageSlider_current" : ""}
               onClick={() => setCurrent(i)}
             >
@@ -82,12 +83,13 @@ const LaunchProfile: React.FC<LaunchProfileProps> = ({ data }) => {
         data.launch.links.flickr_images.length !== 0 && (
           <div className={`${className}__image-list`}>
             <ImageSlider>
-              {data.launch.links.flickr_images.map((image) =>
+              {data.launch.links.flickr_images.map((image, index) =>
                 image ? (
                   <img
                     src={image}
                     // className={`${className}__image`}
                     key={image}
+                    alt={data.launch?.rocket?.rocket_name + "_" + index}
                   />
                 ) : null
               )}
